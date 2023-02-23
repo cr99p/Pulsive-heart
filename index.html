@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>для тебя</title>
+    </head>
+    <body>
+        <div id="heart">
+            <img class="bottom" src="https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054__480.png" width="500px">
+        </div>
+        <style>
+            #heart img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 200px;
+}
+
+@keyframes heartFadeInOut {
+    0% {transform: scale(1);}
+    25% {transform: scale(.97);}
+    35% {transform: scale(.9);}
+    45% {transform: scale(1.1);}
+    55% {transform: scale(.9);}
+    65% {transform: scale(1.1);}
+    75% {transform: scale(1.03);}
+    100% {transform: scale(1);}
+  }
+  
+  #heart img.bottom { 
+    animation-name: heartFadeInOut; 
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  }
+    </style>
+    </body>
+</html>
